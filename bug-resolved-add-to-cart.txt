@@ -1,0 +1,179 @@
+This bug is resolved.
+mayankbajoria@Mayanks-MacBook-Pro-5 git_lect 2 % git init
+Initialized empty Git repository in /Users/mayankbajoria/Desktop/git_lect 2/.git/
+mayankbajoria@Mayanks-MacBook-Pro-5 git_lect 2 % git add .
+\%                                                                                                                                                                                  
+mayankbajoria@Mayanks-MacBook-Pro-5 git_lect 2 % \git commit -m "revision"   
+[main (root-commit) 50c293e] revision
+ 1 file changed, 0 insertions(+), 0 deletions(-)
+ create mode 100644 lec -2 content.txt
+mayankbajoria@Mayanks-MacBook-Pro-5 git_lect 2 % git remote add origin https://github.com/Mayank-Bajoria/git_lec2.git
+mayankbajoria@Mayanks-MacBook-Pro-5 git_lect 2 % git push -u origin main
+
+Enumerating objects: 3, done.
+Counting objects: 100% (3/3), done.
+Writing objects: 100% (3/3), 223 bytes | 223.00 KiB/s, done.
+Total 3 (delta 0), reused 0 (delta 0), pack-reused 0 (from 0)
+To https://github.com/Mayank-Bajoria/git_lec2.git
+ * [new branch]      main -> main
+branch 'main' set up to track 'origin/main'.
+mayankbajoria@Mayanks-MacBook-Pro-5 git_lect 2 % 
+mayankbajoria@Mayanks-MacBook-Pro-5 git_lect 2 % git init
+Reinitialized existing Git repository in /Users/mayankbajoria/Desktop/git_lect 2/.git/
+mayankbajoria@Mayanks-MacBook-Pro-5 git_lect 2 % git add .
+mayankbajoria@Mayanks-MacBook-Pro-5 git_lect 2 % \git commit -m "revision" 
+[main 8f58b00] revision
+ 1 file changed, 2 insertions(+)
+mayankbajoria@Mayanks-MacBook-Pro-5 git_lect 2 %  git remote add origin https://github.com/Mayank-Bajoria/git_lec2.git
+error: remote origin already exists.
+mayankbajoria@Mayanks-MacBook-Pro-5 git_lect 2 % 
+mayankbajoria@Mayanks-MacBook-Pro-5 git_lect 2 %  git push -u origin main
+Enumerating objects: 5, done.
+Counting objects: 100% (5/5), done.
+Delta compression using up to 10 threads
+Compressing objects: 100% (2/2), done.
+Writing objects: 100% (3/3), 321 bytes | 321.00 KiB/s, done.
+Total 3 (delta 0), reused 0 (delta 0), pack-reused 0 (from 0)
+To https://github.com/Mayank-Bajoria/git_lec2.git
+   50c293e..8f58b00  main -> main
+branch 'main' set up to track 'origin/main'.
+mayankbajoria@Mayanks-MacBook-Pro-5 git_lect 2 % git add .
+mayankbajoria@Mayanks-MacBook-Pro-5 git_lect 2 % git commit -m "revision1"
+[main fb4731c] revision1
+ 1 file changed, 2 insertions(+), 1 deletion(-)
+mayankbajoria@Mayanks-MacBook-Pro-5 git_lect 2 % git push -u origin main
+Enumerating objects: 5, done.
+Counting objects: 100% (5/5), done.
+Delta compression using up to 10 threads
+Compressing objects: 100% (2/2), done.
+Writing objects: 100% (3/3), 298 bytes | 298.00 KiB/s, done.
+Total 3 (delta 1), reused 0 (delta 0), pack-reused 0 (from 0)
+remote: Resolving deltas: 100% (1/1), completed with 1 local object.
+To https://github.com/Mayank-Bajoria/git_lec2.git
+   8f58b00..fb4731c  main -> main
+branch 'main' set up to track 'origin/main'.
+mayankbajoria@Mayanks-MacBook-Pro-5 git_lect 2 % git add .
+mayankbajoria@Mayanks-MacBook-Pro-5 git_lect 2 % git commit -m "revision 2"
+[main 072fd2c] revision 2
+ 1 file changed, 2 insertions(+), 1 deletion(-)
+mayankbajoria@Mayanks-MacBook-Pro-5 git_lect 2 % git push -u origin main
+Enumerating objects: 5, done.
+Counting objects: 100% (5/5), done.
+Delta compression using up to 10 threads
+Compressing objects: 100% (2/2), done.
+Writing objects: 100% (3/3), 379 bytes | 379.00 KiB/s, done.
+Total 3 (delta 0), reused 0 (delta 0), pack-reused 0 (from 0)
+To https://github.com/Mayank-Bajoria/git_lec2.git
+   fb4731c..072fd2c  main -> main
+branch 'main' set up to track 'origin/main'.
+mayankbajoria@Mayanks-MacBook-Pro-5 git_lect 2 % git branch feature-chatbot
+mayankbajoria@Mayanks-MacBook-Pro-5 git_lect 2 % git branch
+  feature-chatbot
+* main
+mayankbajoria@Mayanks-MacBook-Pro-5 git_lect 2 % git checkout feature-chatbot
+M       lec -2 content.txt
+Switched to branch 'feature-chatbot'
+mayankbajoria@Mayanks-MacBook-Pro-5 git_lect 2 % git checkout main
+M       lec -2 content.txt
+Switched to branch 'main'
+Your branch is up to date with 'origin/main'.
+mayankbajoria@Mayanks-MacBook-Pro-5 git_lect 2 % git branch jarvis
+mayankbajoria@Mayanks-MacBook-Pro-5 git_lect 2 % git branch
+  feature-chatbot
+  jarvis
+* main
+mayankbajoria@Mayanks-MacBook-Pro-5 git_lect 2 % git checkout jarvis
+M       lec -2 content.txt
+Switched to branch 'jarvis'
+mayankbajoria@Mayanks-MacBook-Pro-5 git_lect 2 % git init
+Reinitialized existing Git repository in /Users/mayankbajoria/Desktop/git_lect 2/.git/
+mayankbajoria@Mayanks-MacBook-Pro-5 git_lect 2 % git add .
+mayankbajoria@Mayanks-MacBook-Pro-5 git_lect 2 % git commit -m "revision3"
+[jarvis 300f4d6] revision3
+ 1 file changed, 1 insertion(+), 1 deletion(-)
+mayankbajoria@Mayanks-MacBook-Pro-5 git_lect 2 % git push -u origin jarvis
+Enumerating objects: 5, done.
+Counting objects: 100% (5/5), done.
+Delta compression using up to 10 threads
+Compressing objects: 100% (2/2), done.
+Writing objects: 100% (3/3), 279 bytes | 279.00 KiB/s, done.
+Total 3 (delta 1), reused 0 (delta 0), pack-reused 0 (from 0)
+remote: Resolving deltas: 100% (1/1), completed with 1 local object.
+remote: 
+remote: Create a pull request for 'jarvis' on GitHub by visiting:
+remote:      https://github.com/Mayank-Bajoria/git_lec2/pull/new/jarvis
+remote: 
+To https://github.com/Mayank-Bajoria/git_lec2.git
+ * [new branch]      jarvis -> jarvis
+branch 'jarvis' set up to track 'origin/jarvis'.
+mayankbajoria@Mayanks-MacBook-Pro-5 git_lect 2 % git checkout -b feature-chatbot
+fatal: a branch named 'feature-chatbot' already exists
+mayankbajoria@Mayanks-MacBook-Pro-5 git_lect 2 %     git pull origin main 
+From https://github.com/Mayank-Bajoria/git_lec2
+ * branch            main       -> FETCH_HEAD
+Already up to date.
+mayankbajoria@Mayanks-MacBook-Pro-5 git_lect 2 %     git merge your-feature-jarvis 
+merge: your-feature-jarvis - not something we can merge
+mayankbajoria@Mayanks-MacBook-Pro-5 git_lect 2 %     git merge jarvis             
+Already up to date.
+mayankbajoria@Mayanks-MacBook-Pro-5 git_lect 2 % git branch
+  feature-chatbot
+* jarvis
+  main
+mayankbajoria@Mayanks-MacBook-Pro-5 git_lect 2 % git checkout feature-chatbot
+Switched to branch 'feature-chatbot'
+mayankbajoria@Mayanks-MacBook-Pro-5 git_lect 2 % git branch
+* feature-chatbot
+  jarvis
+  main
+mayankbajoria@Mayanks-MacBook-Pro-5 git_lect 2 % git branch -d
+fatal: branch name required
+mayankbajoria@Mayanks-MacBook-Pro-5 git_lect 2 % git branch -d  feature-chatbot
+error: cannot delete branch 'feature-chatbot' used by worktree at '/Users/mayankbajoria/Desktop/git_lect 2'
+mayankbajoria@Mayanks-MacBook-Pro-5 git_lect 2 % git branch -d feature-chatbot 
+error: cannot delete branch 'feature-chatbot' used by worktree at '/Users/mayankbajoria/Desktop/git_lect 2'
+mayankbajoria@Mayanks-MacBook-Pro-5 git_lect 2 % git branch -d feature-chatbot
+error: cannot delete branch 'feature-chatbot' used by worktree at '/Users/mayankbajoria/Desktop/git_lect 2'
+mayankbajoria@Mayanks-MacBook-Pro-5 git_lect 2 % git checkout main
+Switched to branch 'main'
+Your branch is up to date with 'origin/main'.
+mayankbajoria@Mayanks-MacBook-Pro-5 git_lect 2 % git branch -d feature-chatbot
+Deleted branch feature-chatbot (was 072fd2c).
+mayankbajoria@Mayanks-MacBook-Pro-5 git_lect 2 % git branch
+  jarvis
+* main
+mayankbajoria@Mayanks-MacBook-Pro-5 git_lect 2 % git checkout add-to-cart
+error: pathspec 'add-to-cart' did not match any file(s) known to git
+mayankbajoria@Mayanks-MacBook-Pro-5 git_lect 2 % git checkout bug-add-to-cart
+error: pathspec 'bug-add-to-cart' did not match any file(s) known to git
+mayankbajoria@Mayanks-MacBook-Pro-5 git_lect 2 % git checkout -b bug-add-to-cart
+Switched to a new branch 'bug-add-to-cart'
+mayankbajoria@Mayanks-MacBook-Pro-5 git_lect 2 % git checkout bug-add-to-cart
+Already on 'bug-add-to-cart'
+mayankbajoria@Mayanks-MacBook-Pro-5 git_lect 2 % git add .
+mayankbajoria@Mayanks-MacBook-Pro-5 git_lect 2 % git commit -m "all about branching"
+[bug-add-to-cart 76f166b] all about branching
+ 2 files changed, 2 insertions(+)
+ create mode 100644 bug-resolved-add-to-cart.txt
+ create mode 100644 lec -3 content.txt
+mayankbajoria@Mayanks-MacBook-Pro-5 git_lect 2 % git push -u bug-add-to-cart
+fatal: 'bug-add-to-cart' does not appear to be a git repository
+fatal: Could not read from remote repository.
+
+Please make sure you have the correct access rights
+and the repository exists.
+mayankbajoria@Mayanks-MacBook-Pro-5 git_lect 2 % git push -u origin bug-add-to-cart
+Enumerating objects: 5, done.
+Counting objects: 100% (5/5), done.
+Delta compression using up to 10 threads
+Compressing objects: 100% (2/2), done.
+Writing objects: 100% (4/4), 403 bytes | 403.00 KiB/s, done.
+Total 4 (delta 0), reused 0 (delta 0), pack-reused 0 (from 0)
+remote: 
+remote: Create a pull request for 'bug-add-to-cart' on GitHub by visiting:
+remote:      https://github.com/Mayank-Bajoria/git_lec2/pull/new/bug-add-to-cart
+remote: 
+To https://github.com/Mayank-Bajoria/git_lec2.git
+ * [new branch]      bug-add-to-cart -> bug-add-to-cart
+branch 'bug-add-to-cart' set up to track 'origin/bug-add-to-cart'.
+mayankbajoria@Mayanks-MacBook-Pro-5 git_lect 2 % 
